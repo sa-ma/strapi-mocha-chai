@@ -1,0 +1,34 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/todos",
+      "handler": "todos.find"
+    },
+    {
+      "method": "GET",
+      "path": "/todos/count",
+      "handler": "todos.count"
+    },
+    {
+      "method": "GET",
+      "path": "/todos/:id",
+      "handler": "todos.findOne"
+    },
+    {
+      "method": "POST",
+      "path": "/todos",
+      "handler": "todos.create"
+    },
+    {
+      "method": "PUT",
+      "path": "/todos/:id",
+      "handler": "todos.update"
+    },
+    {
+      "method": "DELETE",
+      "path": "/todos/:id",
+      "handler": "todos.delete"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "unit-test-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "test": "cross-env NODE_ENV=test mocha --timeout 10000 ./tests/ --recursive --exit || true"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^7.0.2",
+    "mocha": "^8.0.1"
+  },
+  "dependencies": {
+    "knex": "<0.20.0",
+    "sqlite3": "latest",
+    "strapi": "3.0.0",
+    "strapi-admin": "3.0.0",
+    "strapi-connector-bookshelf": "3.0.0",
+    "strapi-plugin-content-manager": "3.0.0",
+    "strapi-plugin-content-type-builder": "3.0.0",
+    "strapi-plugin-email": "3.0.0",
+    "strapi-plugin-upload": "3.0.0",
+    "strapi-plugin-users-permissions": "3.0.0",
+    "strapi-utils": "3.0.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "a0b661a8-cb30-4959-9754-248cbad8cc6f"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
